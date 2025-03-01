@@ -1,0 +1,32 @@
+image map is a apply link on image any shape.
+
+tag : 
+<img>
+
+<map>
+<area>
+
+for create table = <table>
+
+for create a row = <tr> table row 
+
+for create/set a data = <td> table data 
+
+for set table heading = <th> table heading 
+
+for set table body = <tbody> 
+
+for set table footer = <tfoot>
+
+for set table head = <thead>
+
+for set table title = <caption>
+
+cellspacing = use to give a space between cells.
+
+cellpadding = use to give a space inside around a text.
+
+to merge a cell use rowspan and colspan. both are apply in <td> or <th> tag .
+
+when we use rowspan remove cells from next row.
+when we use colspan remove cells from that effective row.
