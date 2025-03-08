@@ -1,0 +1,9 @@
+1. form => which is used to create form 
+
+these all are inline tag.
+2. input
+3. label 
+4. textarea
+5. buttons
+6. select-option 
+7. datalist

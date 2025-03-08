@@ -1,0 +1,19 @@
+for layout used tags are  :
+ 
+ <section>,
+ <nav>
+ <aside>
+ <article>
+ <main>
+ <header>
+ <footer>
+ <div>
+
+ -> what is sementic tag 
+    which is tell about them for, <p>, <b>, <header> etc
+
+ -> non-sementic tag 
+    which is cant tell about them 
+    div and span
+    div is block tag 
+    while span is inline tag 
