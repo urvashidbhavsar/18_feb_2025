@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS3 PROPERTY BACKDROP-FILTER */
+        .parent {
+            background: url(https://images.unsplash.com/photo-1529718836725-f449d3a52881?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29tYW4lMjBpbiUyMGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D) no-repeat center / cover;
+            width: fit-content;
+            padding: 60px;
+        }
+
+        .mydiv {
+            height: 200px;
+            width: 350px;
+            /* backdrop-filter: blur(20px); */
+            /* backdrop-filter: brightness(0.5); */
+            /* backdrop-filter: contrast(0.5); */
+            /* give image on background image */
+            /* backdrop-filter: drop-shadow(2px 4px 23px black); */
+            backdrop-filter: grayscale(1);
+            /* backdrop-filter: hue-rotate(); */
+            /* backdrop-filter: invert(); */
+            /* backdrop-filter: saturate(); */
+            /* backdrop-filter: sepia(); */
+            /* -webkit-backdrop-filter: blur(20px); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="mydiv"></div>
+    </div>
+</body>
+
+</html>
