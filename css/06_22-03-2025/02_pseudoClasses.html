@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo classes start with (:) sign and used with any element, id, class, universal, attribute selector  */
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .link1:active {
+            color: cornflowerblue;
+        }
+
+        .link2:any-link {
+            color: darkorange;
+        }
+
+        .link3:visited {
+            color: blue;
+        }
+
+        .link4:hover {
+            color: firebrick;
+        }
+
+        button {
+            padding: 10px 30px;
+            border: 2px solid seagreen;
+            color: seagreen;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: seagreen;
+            color: white;
+        }
+
+        button:active {
+            padding: 7px 27px;
+        }
+
+        input {
+            border: 1px solid gray;
+            padding: 5px 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        input:focus {
+            box-shadow: 0 0 5px red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" class="link1">Click Here</a><br>
+    <a href="" class="link2">Click Here</a><br>
+    <a href="" class="link3">Click Here</a><br>
+    <a href="" class="link4">Click Here</a><br>
+    <a href="" class="link5">Click Here</a><br>
+
+    <button>click here to download</button>
+    <br><br>
+
+    <input type="text" name="" id="">
+</body>
+
+</html>
