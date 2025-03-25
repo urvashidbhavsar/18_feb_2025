@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            /* parent */
+            position: relative;
+        }
+
+        .child {
+            height: 150px;
+            width: 150px;
+            font-size: 40px;
+            position: absolute;
+        }
+
+        .child:nth-child(1) {
+            background-color: salmon;
+            z-index: 2;
+        }
+
+        .child:nth-child(2) {
+            background-color: sandybrown;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .child:nth-child(3) {
+            background-color: lawngreen;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+
+</html>
