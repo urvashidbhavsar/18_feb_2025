@@ -1,0 +1,8 @@
+@import 'variables.css';
+
+h1 {
+    font-size: var(--font1);
+    border: var(--border-w-1) solid red;
+    padding: var(--p-1);
+    /* margin: calc(); (+ - * /) */
+}

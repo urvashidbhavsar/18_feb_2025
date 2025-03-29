@@ -1,0 +1,7 @@
+/* variable used for reused property */
+
+:root {
+    --font1: calc(3vw + 20px);
+    --p-1: 10px;
+    --border-w-1: 2px;
+}

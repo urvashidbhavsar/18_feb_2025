@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 500px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            background-color: salmon;
+        }
+
+        .parent>.child {
+            width: inherit;
+            border: inherit;
+            padding: inherit;
+            margin: inherit;
+            background-color: inherit;
+        }
+
+        .main div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        .main>* {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nostrum deserunt nemo necessitatibus ipsam aliquid
+        odit aperiam voluptate. Odio tempora doloribus quos aut, et consequuntur nisi officia sequi modi vero?
+
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quod facere, quas, tempore aut incidunt ex
+            nostrum libero beatae eius est. Sint quia laborum fugiat dolorem ad corporis voluptatem est.
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <h1>Hello world</h1>
+    </div>
+</body>
+
+</html>
