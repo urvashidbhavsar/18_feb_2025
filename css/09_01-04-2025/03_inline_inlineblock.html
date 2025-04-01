@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list1 ul {
+            list-style: none;
+            background-color: sandybrown;
+        }
+
+        .list1 ul li {
+            /* inline can set element in a row but not calculate element height and width even if have parent area it not covered */
+            display: inline;
+            padding: 20px;
+            background-color: blanchedalmond;
+        }
+
+        .list2 ul {
+            margin-top: 40px;
+            background-color: lightcoral;
+            list-style: none;
+        }
+
+        .list2 ul li {
+            /* inline-block can set element in a row and calculate element height and width even if have parent area it also covered */
+            display: inline-block;
+            padding: 20px;
+            background-color: darkcyan;
+        }
+
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            /* display: block; default  */
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list1">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="list2">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="mydiv"></div>
+</body>
+
+</html>

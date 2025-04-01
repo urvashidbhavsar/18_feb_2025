@@ -1,0 +1,27 @@
+block (default)
+none
+inline 
+inline-block
+flex
+grid
+inline-flex = set element width 0. depend on content
+inline-grid = set element width 0. depend on content
+table 
+
+====================================
+following property effected with when we use display flex .
+
+1. flex-grow  (child) flexible grow
+2. flex-shrink (child) control child overflow value
+3. flex-basis (child) fixed grow
+4. flex (child)
+5. flex-wrap (parent)
+6. flex-direction (parent)
+7. flex-flow (parent)
+8. gap (parent)
+9. row-gap (parent)
+10. column-gap (parent)
+11. align-items (parent) vertical effect
+12. align-content (parent) vertical effect
+13. align-self (child) vertical effect
+14. justify-content (parent) effect horizontal 
