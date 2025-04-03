@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* body {} */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------  */
+header {
+    background-color: darkblue;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header .navbar .logo {
+    color: white;
+}
+
+header .navbar .logo .fa-city {
+    font-size: 44px;
+}
+
+header .navbar .nav-bar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+header .navbar .nav-bar .nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .navbar .nav-bar .nav li {
+    padding: 10px;
+}
+
+header .navbar .nav-bar .nav li a {
+    color: white;
+}
+
+header .navbar .nav-bar .nav li a:hover {
+    color: darkorange;
+}
+
+header .navbar .nav-bar .contact button {
+    padding: 15px;
+    background: darkorange;
+    border: 1px solid transparent;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

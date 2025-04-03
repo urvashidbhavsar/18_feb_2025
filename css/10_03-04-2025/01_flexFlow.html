@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+
+            /* flex-direction: row; default  */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: nowrap; default */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            flex-flow: row-reverse wrap;
+        }
+
+        .child {
+            height: 100px;
+            width: 50%;
+            font-size: 40px;
+        }
+
+        .child:nth-child(even) {
+            background-color: coral;
+        }
+
+        .child:nth-child(odd) {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+</body>
+
+</html>
