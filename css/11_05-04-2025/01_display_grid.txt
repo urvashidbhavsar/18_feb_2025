@@ -1,0 +1,32 @@
+grid used to show tabular type data.
+
+property list : 
+
+grid-template-columns (parent)
+grid-template-rows (parent)
+row-gap (parent)
+column-gap (parent)
+gap (parent)
+grid-area (child)
+grid-template-area  (parent)
+grid-row-start (child)
+grid-row-end (child)
+grid-row (child)
+grid-column-start (child)
+grid-column-end (child)
+grid-column (child)
+grid-auto-flow (parent)
+grid-auto-columns (parent)
+grid-auto-rows (parent)
+
+justify-content (parent)
+justify-items (parent)
+justify-self (child)
+
+align-items (parent)
+align-content (parent)
+align-self (child)
+
+place-content (parent)
+place-items (parent)
+place-self (child)
