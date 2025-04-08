@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+        margin: 0 5px;
+    }
+
+    .container {
+        max-width: 1550px;
+        background-color: brown;
+        color: white;
+        height: 50px;
+        padding-top: 15px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    select {
+        border: none;
+        background-color: brown;
+        color: white;
+    }
+
+    /* select:active{
+        color: white;
+    } */
+
+    .nav-bar {
+        display: flex;
+        gap: 30px;
+    }
+
+    .contant {
+        height: 50px;
+        max-width: 1550px;
+        background-color: rgb(232, 232, 240);
+    }
+
+    li:hover {
+        color: yellow;
+    }
+
+    select:hover {
+        color: yellow;
+    }
+
+    option {
+        color: black;
+        background-color: white;
+    }
+
+    option:hover {
+        color: red !important;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-house"> logo</i>
+                <div class="menubar">
+                    <ul class="nav-bar">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>
+                            <select name="service" id="service">
+                                <option value="service">service</option>
+                                <option value="service1">service 1</option>
+                                <option value="service2">service 2</option>
+                                <option value="service3">service 3</option>
+                            </select>
+                        </li>
+                        <li>Contact</li>
+                        <li> Blog</li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="contant">
+
+        </div>
+    </header>
+</body>
+
+</html>

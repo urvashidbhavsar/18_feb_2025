@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: turquoise;
+            margin: 100px auto;
+
+            /* transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: ease;
+            transition-delay: 2s; */
+
+            /* transition: 1s ease-in all; */
+            /* transition: ease-in-out 1s all; */
+            /* transition: all 1s ease-out; */
+            /* transition: 1s linear; */
+            transition: 1s cubic-bezier(1, 0, 0, 1);
+        }
+
+        div:hover {
+            height: 200px;
+            width: 200px;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 20px;
+            background-color: transparent;
+            border: 2px solid blue;
+            color: blue;
+            transition: 0.7s ease background-color;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>mydiv</div>
+
+    <button>Click Here</button>
+</body>
+
+</html>

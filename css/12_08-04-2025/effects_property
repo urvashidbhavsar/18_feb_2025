@@ -1,0 +1,36 @@
+1. transition => used to move smooth.
+
+    transition-duration
+    transition-timing-function
+    transition-property
+    transition-delay
+    transition (short hand)
+
+2. transform = used  how to show element dimensions
+
+    transform
+    transform-origin
+    transform-style
+    transform-box
+
+    functions :
+
+    (1) rotate => rotate(),rotateX(), rotateY(), rotateZ(), rotate3d()
+    (2) skew => skew(), skewX(), skewY()
+    (3) scale => scale(), scaleX(), scaleY(), scaleZ(), scalerd()
+    (4) translate => translate(), translateX(), translateY(), translateZ(), translate3d()
+    (5) matrix => matrix()
+    (6) matrix3d => matrix3d()
+    (7) perspective => perspective()
+
+3. animation 
+
+    animation-name 
+    animation-duration 
+    animation-timing-function 
+    animation-delay
+    animation-property
+    animation-fill-mode 
+    animation-iteration-count 
+    animation-direction
+

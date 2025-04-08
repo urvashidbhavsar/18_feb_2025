@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            margin: auto;
+
+            display: grid;
+            /* short hand : align-content and justify-content */
+            /* place-content: center start; */
+
+            /* short hand : align-items and justify-items */
+            /* place-items: center start; */
+        }
+
+        h1 {
+            /* short hand : align-self and justify-self */
+            place-self: start end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Hello</h1>
+    </div>
+</body>
+
+</html>
