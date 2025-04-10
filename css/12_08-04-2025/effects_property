@@ -17,7 +17,7 @@
 
     (1) rotate => rotate(),rotateX(), rotateY(), rotateZ(), rotate3d()
     (2) skew => skew(), skewX(), skewY()
-    (3) scale => scale(), scaleX(), scaleY(), scaleZ(), scalerd()
+    (3) scale => scale(), scaleX(), scaleY(), scaleZ(), scale3d()
     (4) translate => translate(), translateX(), translateY(), translateZ(), translate3d()
     (5) matrix => matrix()
     (6) matrix3d => matrix3d()
