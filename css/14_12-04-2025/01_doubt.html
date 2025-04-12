@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1550px;
+            background-image: url(https://www.shutterstock.com/image-photo/blurred-restaurant-chef-cooking-open-600nw-377694613.jpg);
+            margin: auto;
+            padding: 0 40px;
+        }
+
+        h1 {
+            color: white;
+            border: 2px solid transparent;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        .li1 {
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid transparent;
+
+        }
+
+        input {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 5px;
+            height: 15px;
+            border: none;
+            margin-top: 2px;
+        }
+
+        .fa-magnifying-glass {
+            font-size: 13px;
+            background-color: white;
+            height: 20px;
+            width: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: yellowgreen;
+            text-align: center;
+            padding-top: 3px;
+            /* margin-right: 3px; */
+        }
+
+        .p1 {
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .border:hover {
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <h1 class="logo border">Cooking <i class="fa-solid fa-utensils"></i></h1>
+                <div class="nav-bar">
+                    <ul class="nav">
+                        <li><a class="li1 border" href="">Home</a></li>
+                        <li><a href="" class="border">About</a></li>
+                        <li><a href="" class="border">Classes</a></li>
+                        <li><a href="" v>Blog <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="" v>Pages <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="" class="border">Contact</a></li>
+                        <li>
+                            <p class="p1"><input type="text" placeholder="Enter Keyword">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </p>
+                        </li>
+                        <li><a href="" class="border"><i class="fa-solid fa-moon"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

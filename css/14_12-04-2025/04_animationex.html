@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 600px;
+            display: grid;
+            place-content: center;
+        }
+
+        .main {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dots {
+            height: 30px;
+            width: 30px;
+        }
+
+        .dots:nth-child(1) {
+            background-color: firebrick;
+            animation: move 1s ease infinite alternate;
+        }
+
+        .dots:nth-child(2) {
+            background-color: rgb(178, 34, 178);
+            animation: move 1s ease infinite 0.2s alternate;
+        }
+
+        .dots:nth-child(3) {
+            background-color: rgb(132, 178, 34);
+            animation: move 1s ease infinite 0.4s alternate;
+        }
+
+        .dots:nth-child(4) {
+            background-color: rgb(53, 34, 178);
+            animation: move 1s ease infinite 0.6s alternate;
+        }
+
+        .dots:nth-child(5) {
+            background-color: rgb(80, 12, 84);
+            animation: move 1s ease infinite 0.8s alternate;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
+</body>
+
+</html>

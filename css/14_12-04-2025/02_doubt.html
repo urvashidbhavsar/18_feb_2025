@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            background: linear-gradient(rgb(104, 200, 150), white);
+            height: 300px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 100px auto;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        img {
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            margin: 5px auto;
+        }
+
+        .card h2 {
+            margin: 10px 0 5px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            text-align: justify;
+            text-wrap: nowrap;
+            text-overflow: clip;
+            word-wrap: normal;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.9s;
+        }
+
+        .card button:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/2303/2711/files/2_e822dae0-14df-4cb8-b145-ea4dc0966b34.jpg?v=1617059123"
+            alt="Product Image" />
+        <h2>Conditioner</h2>
+        <p>Conditioner is a moisturising agent designed to give hair shine, smooth out strands and leave them feeling
+            soft.</p>
+        <button>Buy Now</button>
+    </div>
+</body>
+
+</html>
