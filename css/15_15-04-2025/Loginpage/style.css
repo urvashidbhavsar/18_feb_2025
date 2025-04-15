@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.mainpage {
+    background: url(https://images.pexels.com/photos/4348395/pexels-photo-4348395.jpeg?cs=srgb&dl=pexels-shkrabaanthony-4348395.jpg&fm=jpg) no-repeat center/cover, linear-gradient(60deg, rgba(2, 3, 5, 0.7), rgb(112, 178, 245, 0.7));
+    background-blend-mode: multiply;
+    padding: 100px 80px;
+    display: flex;
+    justify-content: end;
+}
+
+.login-page {
+    background-color: white;
+    width: fit-content;
+    padding: 30px 50px;
+    border-radius: 7px;
+}
+
+.title {
+    padding: 20px;
+    background-color: #0771b3;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    transform: translateY(-47px);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon a {
+    color: white;
+}
+
+.row {
+    padding-bottom: 17px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+}
+
+.field i {
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    padding: 5px;
+    display: grid;
+    place-content: center;
+}
+
+input[type="text"],
+[type="password"] {
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+}
+
+button {
+    padding: 6px 27px;
+    font-size: 16px;
+    background: #0771b3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.row a {
+    text-decoration: none;
+    color: blue;
+}

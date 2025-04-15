@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imagescale {
+            width: 500px;
+            margin: auto;
+            border: 10px groove lightcoral;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+            transition: 1s ease-in-out;
+        }
+
+        .imagescale:hover img {
+            scale: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imagescale">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+            alt="">
+    </div>
+</body>
+
+</html>
