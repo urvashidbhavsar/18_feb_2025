@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 200px;
+            margin: 50px auto;
+            box-shadow: 0 0 4px;
+            position: relative;
+        }
+
+        .images {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h1,
+        p {
+
+            text-align: center;
+            padding: 9px 0;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: black;
+            opacity: 0;
+            color: white;
+            transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            position: absolute;
+            bottom: 95px;
+            width: 100%;
+        }
+
+        .main:hover .logo {
+            opacity: 0.8;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="images">
+            <a href="https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg " target="_blank" widt>
+                <img src="https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg" alt="">
+            </a>
+        </div>
+        <div class="logo">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-brands fa-whatsapp"></i></p>
+        </div>
+        <div class="text">
+            <h1>My Profile</h1>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

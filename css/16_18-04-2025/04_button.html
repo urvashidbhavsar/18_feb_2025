@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            padding: 15px 30px;
+            font-size: 17px;
+            color: blue;
+            background: white;
+            border: 2px solid blue;
+            transition: 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* create a layer  */
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: blue;
+            z-index: -1;
+            /* transform: scaleX(0); */
+            transform: scale(0);
+            transform-origin: top left;
+            transition: 0.5s ease;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .btn:hover::after {
+            transform: scale(1);
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            /* transform: scaleX(1); */
+        }
+
+        .btn:hover {
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">Click Here</button>
+</body>
+
+</html>
