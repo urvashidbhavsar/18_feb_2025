@@ -1,0 +1,40 @@
+:root {
+    /* margin, padding, gap */
+    --space-1: 10px;
+    --space-2: 20px;
+    --space-3: 30px;
+    --space-4: 40px;
+    --space-5: 50px;
+    --space-6: 60px;
+    --space-7: 70px;
+    --space-8: 80px;
+    --space-9: 90px;
+    --space-10: 100px;
+    /* border */
+    --b1: 1px;
+    --b2: 2px;
+    --b3: 3px;
+    --b4: 4px;
+    --b5: 5px;
+    /* radius */
+    --br1: 1px;
+    --br2: 2px;
+    --br3: 3px;
+    --br4: 4px;
+    --br5: 5px;
+    --br10: 10px;
+    --b-circle: 50%;
+    /* colors  */
+    --darkblue: #191a33;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #bdbdbd;
+    --orange: #e64105;
+
+    /* font-size */
+    --font1: calc(2.5vw + 20px);
+    --font2: calc(2vw + 20px);
+    --font3: calc(1.5vw + 20px);
+    --font4: calc(1vw + 20px);
+    --font5: calc(0.5vw + 20px);
+}

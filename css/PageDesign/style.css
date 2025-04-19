@@ -1,0 +1,72 @@
+@import 'variable.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------  */
+header {
+    background-color: var(--darkblue);
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-2) 0;
+}
+
+header .navbar .logo {
+    color: var(--white);
+    font-size: var(--font5);
+}
+
+header .navbar .nav-bar {
+    display: flex;
+    gap: var(--space-5);
+    align-items: center;
+}
+
+header .navbar .nav-bar .nav {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+header .navbar .nav-bar .nav li {
+    padding: var(--space-1);
+}
+
+header .navbar .nav-bar .nav li a {
+    color: var(--white);
+}
+
+header .navbar .nav-bar .nav li a:hover {
+    color: var(--orange);
+}
+
+header .navbar .nav-bar .contact button {
+    padding: var(--space-1) var(--space-2);
+    background: var(--orange);
+    border: var(--b1) solid transparent;
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: var(--br5);
+}

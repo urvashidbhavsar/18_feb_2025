@@ -1,0 +1,9 @@
+devices = mobile device, tablet, screen - leptop(mini, large), full screen
+
+max-width = 576px (mobile devices)
+breakpoints
+min-width = 576px 
+min-width = 768px (tablet screen)
+min-width = 992px (mini pc's screen)
+min-width = 1200px
+min-width = 1400px
