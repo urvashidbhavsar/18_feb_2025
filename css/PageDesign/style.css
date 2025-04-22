@@ -8,7 +8,6 @@
 }
 
 .container {
-    max-width: 1200px;
     margin: auto;
     padding: 0 10px;
 }
@@ -21,9 +20,66 @@ a {
     text-decoration: none;
 }
 
-/* -------------------------------  */
-header {
+/* -------------------------------------------------------- */
+.topheader {
     background-color: var(--darkblue);
+    border-bottom: var(--b1) solid rgb(130, 130, 130);
+}
+
+.topheader .infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-2) 0;
+}
+
+.topheader .infor .contact-info {
+    display: flex;
+    gap: var(--space-2);
+    color: var(--white);
+    font-size: 14px;
+}
+
+.topheader .infor .contact-info a {
+    color: var(--white);
+}
+
+.topheader .infor .social {
+    display: flex;
+    gap: var(--space-1);
+}
+
+.topheader .infor .social .icon {
+    height: 35px;
+    width: 35px;
+    border: var(--b1) solid var(--white);
+    background-color: transparent;
+    display: grid;
+    place-content: center;
+    border-radius: var(--b-circle);
+    transition: 0.4s ease all;
+}
+
+.topheader .infor .social .icon a {
+    color: var(--white);
+    transition: 0.4s ease all;
+}
+
+.topheader .infor .social .icon:hover {
+    background-color: var(--white);
+}
+
+.topheader .infor .social .icon:hover a {
+    color: var(--orange);
+}
+
+/* ---------------------------------------------------------  */
+header {
+    position: fixed;
+    top: 77px;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 header .navbar {
@@ -69,4 +125,57 @@ header .navbar .nav-bar .contact button {
     color: var(--white);
     text-transform: uppercase;
     border-radius: var(--br5);
+}
+
+header .navbar .menubtn button {
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    background-color: transparent;
+    border: var(--b2) solid var(--white);
+    color: var(--white);
+}
+
+/* ---------------------------------------------------------------- */
+.home-page {
+    background-image: url(https://preview.colorlib.com/theme/constructioncompany/assets/img/hero/h1_hero.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0;
+    background-color: rgba(12, 12, 95, 0.8);
+    background-blend-mode: multiply;
+}
+
+.home-page h1 {
+    font-size: calc(5.5vw + 25px);
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    -webkit-text-stroke: 1px var(--white);
+}
+
+.home-page .title1 {
+    color: var(--orange);
+}
+
+.home-page .title2 {
+    color: transparent;
+    background-image: linear-gradient(var(--orange), #292997);
+    animation: change 1s ease infinite;
+    background-clip: text;
+}
+
+@keyframes change {
+    0% {
+        background-image: linear-gradient(var(--orange), #292997);
+    }
+
+    50% {
+        background-image: linear-gradient(160deg, var(--orange), #292997);
+    }
+
+    100% {
+        background-image: linear-gradient(270deg, var(--orange), #292997);
+    }
 }

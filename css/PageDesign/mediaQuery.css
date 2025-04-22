@@ -1,22 +1,75 @@
 @import 'variable.css';
 
-@media (max-width:576px) {}
+@media (max-width:576px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header .navbar .nav-bar {
+        display: none;
+    }
+
+    .topheader {
+        display: none;
+    }
+}
 
 /* ================================================================== */
-@media (min-width:576px) {}
+@media (min-width:576px) {
+    .container {
+        max-width: 550px;
+    }
+
+    header .navbar .nav-bar {
+        display: none;
+    }
+
+    .topheader {
+        display: none;
+    }
+}
 
 /* ================================================================== */
-@media (min-width:768px) {}
+@media (min-width:768px) {
+    .container {
+        max-width: 750px;
+    }
+}
 
 /* ================================================================== */
 
-@media (min-width:992px) {}
+@media (min-width:992px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .topheader {
+        display: block;
+    }
+}
 
 /* ================================================================== */
-@media (min-width:1200px) {}
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    header .navbar .nav-bar {
+        display: flex;
+    }
+
+    header .navbar .menubtn {
+        display: none;
+    }
+}
 
 /* ================================================================== */
 
-@media (min-width:1400px) {}
+@media (min-width:1400px) {
+    .container {
+        max-width: 1340px;
+    }
+}
 
 /* ================================================================== */
