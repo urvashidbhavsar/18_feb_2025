@@ -20,6 +20,12 @@ a {
     text-decoration: none;
 }
 
+.imgset {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 /* -------------------------------------------------------- */
 .topheader {
     background-color: var(--darkblue);
@@ -75,11 +81,11 @@ a {
 
 /* ---------------------------------------------------------  */
 header {
-    position: fixed;
-    top: 77px;
+    position: sticky;
+    top: 0;
+    z-index: 111;
     width: 100%;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color: var(--darkblue);
 }
 
 header .navbar {
@@ -141,7 +147,7 @@ header .navbar .menubtn button {
     background-image: url(https://preview.colorlib.com/theme/constructioncompany/assets/img/hero/h1_hero.jpg.webp);
     background-position: center;
     background-size: cover;
-    padding: 150px 0;
+    padding: 170px 0;
     background-color: rgba(12, 12, 95, 0.8);
     background-blend-mode: multiply;
 }
@@ -152,7 +158,6 @@ header .navbar .menubtn button {
     line-height: 1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
-    -webkit-text-stroke: 1px var(--white);
 }
 
 .home-page .title1 {
@@ -161,21 +166,104 @@ header .navbar .menubtn button {
 
 .home-page .title2 {
     color: transparent;
-    background-image: linear-gradient(var(--orange), #292997);
+    background-image: linear-gradient(var(--orange), transparent);
     animation: change 1s ease infinite;
     background-clip: text;
+    -webkit-text-stroke: 1px var(--white);
+}
+
+.home-page .sm-title {
+    color: var(--white);
+    text-transform: uppercase;
+    padding: var(--space-2) 0;
+}
+
+.home-page .sm-title::before {
+    content: "";
+    height: 3px;
+    width: 42px;
+    background-color: var(--orange);
+    display: inline-block;
+    margin: 2px 5px;
+
 }
 
 @keyframes change {
     0% {
-        background-image: linear-gradient(var(--orange), #292997);
+        background-image: linear-gradient(var(--orange), transparent);
     }
 
     50% {
-        background-image: linear-gradient(160deg, var(--orange), #292997);
+        background-image: linear-gradient(160deg, var(--orange), transparent);
     }
 
     100% {
-        background-image: linear-gradient(270deg, var(--orange), #292997);
+        background-image: linear-gradient(270deg, var(--orange), transparent);
     }
+}
+
+/* ===========================================================  */
+.services h1 {
+    font-size: var(--font2);
+    text-transform: uppercase;
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-2);
+}
+
+.services .cardbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-2);
+    padding-bottom: var(--space-5);
+}
+
+.services .cardbox .cards {
+    border-bottom: 2px solid var(--orange);
+}
+
+.services .cardbox .cards .card-img {
+    overflow: hidden;
+}
+
+.services .cardbox .cards img {
+    transition: 0.5s ease-in-out;
+}
+
+.services .cardbox .cards:hover img {
+    scale: 1.1;
+}
+
+.services .cardbox .cards .card-text {
+    padding: var(--space-2);
+}
+
+.services .cardbox .cards .card-text a {
+    color: var(--black);
+    transition: 0.5s ease;
+}
+
+.services .cardbox .cards .card-text a:hover {
+    color: var(--orange);
+}
+
+.services .cardbox .cards .card-text .fwd {
+    padding: var(--space-2) 0;
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.services .cardbox .cards .card-text button {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    color: var(--black);
+    border: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.services .cardbox .cards:hover button {
+    background-color: var(--orange);
+    color: var(--white);
 }

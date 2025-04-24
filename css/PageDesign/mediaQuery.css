@@ -13,9 +13,29 @@
     .topheader {
         display: none;
     }
+
+    .home-page {
+        padding: 50px 0;
+    }
+
+    .home-page h1 {
+        font-size: calc(4.5vw + 16px);
+    }
+
+    .home-page .title2 {
+        transform: translateX(0);
+    }
+
+    .services h1 {
+        text-align: center;
+    }
+
+    .services .cardbox {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-/* ================================================================== */
+/* =============================================================== */
 @media (min-width:576px) {
     .container {
         max-width: 550px;
@@ -28,12 +48,44 @@
     .topheader {
         display: none;
     }
+
+    .home-page {
+        padding: 70px 0;
+    }
+
+    .home-page h1 {
+        font-size: calc(5.5vw + 20px);
+    }
+
+    .home-page .title2 {
+        transform: translateX(0);
+    }
+
+    .services h1 {
+        text-align: center;
+    }
+
+    .services .cardbox {
+        justify-items: center;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-/* ================================================================== */
+/* =============================================================== */
 @media (min-width:768px) {
     .container {
         max-width: 750px;
+    }
+
+    .home-page .title2 {
+        transform: translateX(50px);
+    }
+
+    .services .cardbox {
+        justify-items: center;
+        text-align: unset;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -47,9 +99,22 @@
     .topheader {
         display: block;
     }
+
+    .home-page {
+        padding: 130px 0;
+    }
+
+    .home-page h1 {
+        font-size: calc(5.5vw + 25px);
+    }
+
+    .services .cardbox {
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-/* ================================================================== */
+/* =============================================================== */
 @media (min-width:1200px) {
     .container {
         max-width: 1140px;
@@ -62,9 +127,17 @@
     header .navbar .menubtn {
         display: none;
     }
+
+    .home-page {
+        padding: 170px 0;
+    }
+
+    .home-page .title2 {
+        transform: translateX(100px);
+    }
 }
 
-/* ================================================================== */
+/* =============================================================== */
 
 @media (min-width:1400px) {
     .container {
@@ -72,4 +145,4 @@
     }
 }
 
-/* ================================================================== */
+/* =============================================================== */
