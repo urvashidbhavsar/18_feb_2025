@@ -33,6 +33,14 @@
     .services .cardbox {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .about .about-data {
+        flex-direction: column;
+    }
+
+    .about .about-data .data {
+        padding: var(--space-2);
+    }
 }
 
 /* =============================================================== */
@@ -70,6 +78,14 @@
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .about .about-data {
+        flex-direction: column;
+    }
+
+    .about .about-data .data {
+        padding: var(--space-2);
+    }
 }
 
 /* =============================================================== */
@@ -86,6 +102,10 @@
         justify-items: center;
         text-align: unset;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about .about-data {
+        text-align: center;
     }
 }
 
@@ -112,6 +132,10 @@
         justify-items: center;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .about .about-data .profile .ab-comp {
+        left: 85px;
+    }
 }
 
 /* =============================================================== */
@@ -134,6 +158,19 @@
 
     .home-page .title2 {
         transform: translateX(100px);
+    }
+
+    .about .about-data {
+        flex-direction: row;
+        text-align: unset;
+    }
+
+    .about .about-data .data {
+        padding: 0 var(--space-10) 0 var(--space-4);
+    }
+
+    .about .about-data .profile .ab-comp {
+        left: 0;
     }
 }
 
